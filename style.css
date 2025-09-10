@@ -1,0 +1,11 @@
+body {
+background-image: url('background.jpg');
+
+    }
+M_body h1{
+font-size: 60px;
+font-family: Brush Script MT;
+}
+table {
+    align-self: center;
+}
