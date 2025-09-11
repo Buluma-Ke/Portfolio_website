@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: 'Poppins',
     sans-serif;
     text-decoration: none;
@@ -11,6 +16,8 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    font-size: 12;
+    font-weight: 400;
     width: 100%;
     padding: 10px 20px;
     /*background-color: rgba(0, 0, 0, 0.8);*/
@@ -24,6 +31,7 @@ header{
 .logo{
     font-size: 25px;
     color: white;
+    font-family: 'Blanka', sans-serif;
     font-weight: 600;
     transition: 0.3s ease;
 }
@@ -35,9 +43,16 @@ header{
 }
 span{
     color: #008080;
+    font-family: 'Blanka', sans-serif;
 }
+.name{
+  font-size: 80px;
+  color: #008080;
+  font-family: 'Blanka', sans-serif;
+}
+
 .navbar a{
-    font-size: 18px;
+    font-size: 12px;
     color: white;
     font-weight: 500;
     margin: 0 20px;
@@ -50,24 +65,24 @@ span{
     border-bottom: 3px solid #008080;
 }
 .contact{
-   padding: 10px 28px; 
-   background-color: white;
-   color: black;
-   border: solid transparent;
-   border-radius: 8px;
-   font-size: 16px;
-   letter-spacing: 1px;
-   font-weight: 600;
-   transition: 0.3s ease;
+    padding: 5px 15px; 
+    background-color: white;
+    color: white;
+    border: solid transparent;
+    border-radius: 8px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
 }
 .contact:hover{
     background-color: #008080;
-    box-shadow: 0 0 25px #008080;
+    box-shadow: 0 0 25px #3e7474;
     color: white;
 }
 .landing {
   height: 100vh; /* full viewport height */
-  width: 100vw;  /* full viewport width */
+  width: 100%;  /* full viewport width */
   background-image: url('background.jpg'); /* your image */
   background-position: center;
   background-repeat: no-repeat;
@@ -92,24 +107,24 @@ span{
 }
 
 .landingpage h1 {
-  font-size: 3.5rem;
-  margin-bottom: 0.5em;
+  font-size: 12px;
 }
 .landingpage h1 span {
   color: #008080;
 }
-.landingpage h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5em;
+.landingpage h3 {
+  font-size: 12;
+  font-weight: 400;
+  /*margin-bottossm:sssss ;*/
 }
 .hp-btn {
-  padding: 14px 40px;
+  padding: 7px 20px;
   background-color: transparent;
   border: 2px solid white;   /* white border */
   color: white;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 12px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -117,28 +132,43 @@ span{
   background-color: white;
   color: #008080;
 }
-.home{
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    overflow: hidden;
-    width: 100%;
-    min-height: 100vh;
-    /*background: rgb(241, 241, 241);*/
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 7em;
-    padding: 100px 5% 0;
+.home {
+  background-color: black;
+  padding: 100px 5% 0;
+  width: 100%;
+  min-height: 100vh;
+}
+.home h1{
+   text-align: center;
+   color: white;
+}
+.home-highlight{
+  color: #008080;
+ 
+}
+.conatct-box ul{
+  line-height: 3;
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+.about {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+.home-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1em;
 }
 .home-content {
     flex: 1;
     max-width: 600px;
+    color: white;
 }
 .home-content h3{
-    font-size: 42px;
+    font-size: 20px;
 }
 .home-content h1 {
     font-size: 2.5rem;
@@ -146,7 +176,7 @@ span{
 }
 .home-content p {
     margin-top: 20px;
-    font-size: 1rem;
+    font-size: 12px;
     line-height: 1.6;
 }
 .btn-box {
@@ -155,50 +185,33 @@ span{
     gap: 1em;
 }
 
-.btn-1 {
-    padding: 12px 24px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s ease;
+.btn-1{
+  padding: 7px 30px;
+  background-color: transparent;
+  border: 2px solid white;   /* white border */
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-.btn-1.hover{
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-
-}
-.btn-2{
-    padding: 15px 28px;
-    background-color: #008080;
-    color: white;
-    border: 2px solid black;
-    border-radius: 8px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-.btn-1.hover{
-    background-color: white;
-    color: #008080;
+.btn-1:hover {
+  background-color: white;
+  color: #008080;
 }
 .img-box {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
 }
 
 .img-box img {
   width: 100%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 0%;
   object-fit: cover;
 }
