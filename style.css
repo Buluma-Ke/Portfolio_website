@@ -1,11 +1,204 @@
-body {
-background-image: url('background.jpg');
-
-    }
-M_body h1{
-font-size: 60px;
-font-family: Brush Script MT;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',
+    sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
-table {
-    align-self: center;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: #008080;
+    text-shadow: 0 0 25px #008080,
+                 0 0 25px #008080;
+    transform: scale(1.1);
+}
+span{
+    color: #008080;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: #008080;
+    border-bottom: 3px solid #008080;
+}
+.contact{
+   padding: 10px 28px; 
+   background-color: white;
+   color: black;
+   border: solid transparent;
+   border-radius: 8px;
+   font-size: 16px;
+   letter-spacing: 1px;
+   font-weight: 600;
+   transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: #008080;
+    box-shadow: 0 0 25px #008080;
+    color: white;
+}
+.landing {
+  height: 100vh; /* full viewport height */
+  width: 100vw;  /* full viewport width */
+  background-image: url('background.jpg'); /* your image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start; /* align content to the left */
+  align-items: center;         /* vertical center */
+  padding-left: 10%;           /* space from left */
+  padding-right: 20px;         /* right padding */
+  color: white;
+  text-align: left;
+}
+
+/* This styles your content container */
+.landingpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertically center its children */
+  gap: 1.5em;              /* equal spacing between h1, h2, button */
+  max-width: 600px;        /* optional max width */
+  height: 100%;            /* take full height of parent */
+}
+
+.landingpage h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5em;
+}
+.landingpage h1 span {
+  color: #008080;
+}
+.landingpage h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5em;
+}
+.hp-btn {
+  padding: 14px 40px;
+  background-color: transparent;
+  border: 2px solid white;   /* white border */
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.hp-btn:hover {
+  background-color: white;
+  color: #008080;
+}
+.home{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    /*background: rgb(241, 241, 241);*/
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7em;
+    padding: 100px 5% 0;
+}
+.home-content {
+    flex: 1;
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 42px;
+}
+.home-content h1 {
+    font-size: 2.5rem;
+    line-height: 1.4;
+}
+.home-content p {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.btn-box {
+    margin-top: 30px;
+    display: flex;
+    gap: 1em;
+}
+
+.btn-1 {
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn-1.hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+
+}
+.btn-2{
+    padding: 15px 28px;
+    background-color: #008080;
+    color: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn-1.hover{
+    background-color: white;
+    color: #008080;
+}
+.img-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
 }
