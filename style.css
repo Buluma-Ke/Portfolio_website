@@ -19,7 +19,7 @@ header{
     font-size: 12;
     font-weight: 400;
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 30px;
     /*background-color: rgba(0, 0, 0, 0.8);*/
     background-color: transparent;
     /*backdrop-filter: blur(10px);*/
@@ -45,17 +45,12 @@ span{
     color: #008080;
     font-family: 'Blanka', sans-serif;
 }
-.name{
-  font-size: 80px;
-  color: #008080;
-  font-family: 'Blanka', sans-serif;
-}
 
 .navbar a{
     font-size: 12px;
     color: white;
     font-weight: 500;
-    margin: 0 20px;
+    margin: 0 30px;
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
@@ -91,7 +86,7 @@ span{
   justify-content: flex-start; /* align content to the left */
   align-items: center;         /* vertical center */
   padding-left: 10%;           /* space from left */
-  padding-right: 20px;         /* right padding */
+  padding-right: 30px;         /* right padding */
   color: white;
   text-align: left;
 }
@@ -107,18 +102,22 @@ span{
 }
 
 .landingpage h1 {
-  font-size: 12px;
+  font-size: 80px;
+  color: #008080;
+  font-family: 'Blanka', sans-serif;
 }
 .landingpage h1 span {
   color: #008080;
 }
 .landingpage h3 {
-  font-size: 12;
+  font-size: 12px;
   font-weight: 400;
   /*margin-bottossm:sssss ;*/
 }
+
+
 .hp-btn {
-  padding: 7px 20px;
+  padding: 7px 30px;
   background-color: transparent;
   border: 2px solid white;   /* white border */
   color: white;
@@ -158,26 +157,59 @@ span{
 }
 .home-flex {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
 }
 .home-content {
     flex: 1;
-    max-width: 600px;
+    max-width: 400px;
     color: white;
 }
 .home-content h3{
-    font-size: 20px;
+    font-size: 30px;
 }
-.home-content h1 {
-    font-size: 2.5rem;
-    line-height: 1.4;
-}
+
 .home-content p {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 12px;
     line-height: 1.6;
+}
+.contact-box{
+  background-color: black !important;
+}
+.home-content table, td{
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 1.6;
+    background-color: black;
+    border-collapse: collapse;
+}
+
+/* Target the table itself */
+.home-content table {
+    background-color: black !important;
+    /* border-collapse: collapse; */
+    border: 1px solid redd;
+}
+
+/* Target all cells */
+.home-content table td {
+    background-color: black;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.home-content table td:first-child{
+    border-right: 1px solid white; 
+    background-color: black;
+    padding-right: 30px;
+    color: #008080;
+    font-weight: 800;
+  }
+
+.home-content table td:last-child{
+    padding-left: 30px;   /* More space between border and content */
 }
 .btn-box {
     margin-top: 30px;
@@ -201,10 +233,6 @@ span{
   color: #008080;
 }
 .img-box {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
 }
 
