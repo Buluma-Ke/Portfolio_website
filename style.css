@@ -132,7 +132,7 @@ span{
 }
 .home {
   /* background-color: black; */
-  padding: 100px 5% 0;
+  padding: 50px 5% 0;
   width: 100%;
   min-height: 100vh;
 }
@@ -275,5 +275,72 @@ span{
   height: auto;
   object-fit: cover;
   z-index: 1;
+}
+.services {
+  padding: 50px 5% 0;
+  width: 100%;
+  min-height: 100vh;
+  color:white;
+}
+.servicesflex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10em;
+  min-height:70vh;
+}
+
+.services h1{
+   text-align: center;
+   color: #008080;
+   font-family: 'Blanka', sans-serif;
+}
+
+.services span{
+  color: white;
+}
+
+.services h3{
+  color: #008080;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.services p{
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.services1 {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  align-items: flex-start;
+}
+
+.services2 {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5em;
+  align-items: flex-end;
+}
+
+.sv {
+  padding:10px;
+  /* border:1px solid white; */
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+}
+
+
+ hr {
+  height: 1px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1); /* subtle white line */
+  margin: 0.5em 0;
 }
 
